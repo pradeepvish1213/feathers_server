@@ -1,0 +1,1 @@
+module.exports = { baseApiUrl: 'http://localhost:3030/' }

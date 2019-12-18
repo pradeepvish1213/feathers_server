@@ -16,6 +16,22 @@ export default function (app: Application) {
       type: DataTypes.STRING,
       allowNull: false
     },
+    full_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    contry_code: {
+      type: DataTypes.CHAR(3),
+      allowNull: false
+    },
+    contact: {
+      type: DataTypes.CHAR(10),
+      allowNull: false
+    },
+    website: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
   
   
   }, {

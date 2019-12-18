@@ -1,0 +1,35 @@
+### Register New User
+POST http://localhost:3030/users HTTP/1.1
+content-type: application/json
+
+{
+    "email": "pradeepvish.ppm@gmail.com",
+    "password": "pradeepvish1213"
+}
+
+### Login API
+POST http://localhost:3030/authentication HTTP/1.1
+content-type: application/json
+
+{
+    "strategy": "local",
+    "email": "pradeepvish.ppm@gmail.com",
+    "password": "pradeepvish1213"
+}
+
+### Logout API
+GET http://localhost:3030/logout HTTP/1.1
+content-type: application/json
+
+### Get all Users
+GET http://localhost:3030/users HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE1NzY2ODgyMDEsImV4cCI6MTU3Njc3NDYwMSwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiMiIsImp0aSI6IjJhNGNiNTY2LWU1MDMtNDU2ZS05MmQzLTdiYzJhZTQwZDhjMyJ9.IL7GHzO2uDzresGtTrbuicDIpV-H_OXbgqEqa6_4FLE
+
+### Get 1 User
+
+
+### Get all Users
+GET http://localhost:3030/users/3 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE1NzY2ODgyMDEsImV4cCI6MTU3Njc3NDYwMSwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiMiIsImp0aSI6IjJhNGNiNTY2LWU1MDMtNDU2ZS05MmQzLTdiYzJhZTQwZDhjMyJ9.IL7GHzO2uDzresGtTrbuicDIpV-H_OXbgqEqa6_4FLE
