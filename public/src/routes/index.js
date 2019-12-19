@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Router, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { LoginContainer, RegistrationContainer, MainLayoutContainer } from './../containers'
-import { PrivateRoute } from './../components/PrivateRouteComponent'
+import { LoginContainer, RegistrationContainer, MainLayoutContainer } from './../containers';
 import { history } from './../utils'
 import { notification } from 'antd'
 
@@ -68,7 +67,7 @@ class Routes extends Component {
             <Fragment>
               <Route exact path="/login" component={LoginContainer} />
               <Route exact path="/registration" component={RegistrationContainer} />
-              <Route path="/" component={LoginContainer} />
+              <Route exact path="/" component={LoginContainer} />
             </Fragment>
           }
           {isLogin &&

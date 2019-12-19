@@ -1,6 +1,12 @@
 export const CoreHelper = {
     getApiMessage,
-    setSeetionLocalStorageData
+    setSeetionLocalStorageData,
+    isReadWriteAdminPermission
+}
+
+function isReadWriteAdminPermission(params,a,b,c) {
+    return true;
+    
 }
 
 function setSeetionLocalStorageData(params) { 
